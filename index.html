@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asmita Hanchate — Resume & Links</title>
+  <meta name="description" content="Asmita Hanchate — Software Development Engineer. Resume and links.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0b0c; --card:#121316; --text:#eaeaea; --muted:#aeb0b4; --accent:#7dd3fc; }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+    .wrap{max-width:860px;margin:0 auto;padding:28px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .top{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .top img{width:220px;max-width:45vw;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.08);object-fit:cover}
+    h1{margin:0 0 6px 0;font-size:clamp(26px,4vw,36px)}
+    .subtitle{color:var(--muted);margin-bottom:14px}
+    .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#1a1c20;border:1px solid rgba(255,255,255,.08);color:var(--text);text-decoration:none;font-weight:600}
+    .btn:hover{border-color:var(--accent);box-shadow:0 0 0 3px rgba(125,211,252,.15)}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    @media(min-width:800px){.grid{grid-template-columns:1fr 300px}}
+    .panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px}
+    .qr{display:flex;justify-content:center;align-items:center}
+    .muted{color:var(--muted)}
+    footer{color:var(--muted);font-size:13px;margin-top:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <img src="assets/photo.jpg" alt="Asmita Hanchate portrait">
+        <div>
+          <h1>Asmita Hanchate</h1>
+          <div class="subtitle">Software Development Engineer • Seattle, WA (open to relocation)</div>
+          <div class="links">
+            <a class="btn" href="assets/Asmita_Hanchate_Resume.pdf" target="_blank" rel="noopener">📄 View Resume (PDF)</a>
+            <a class="btn" href="mailto:asmi0604@vt.edu">✉️ Email</a>
+            <a class="btn" href="https://linkedin.com/in/asmitahanchate" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          </div>
+          <p class="muted">ELB/Networking • Distributed Systems • Java/Python • AWS</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="panel">
+          <h3 style="margin-top:0">About</h3>
+          <p>Hi! I’m Asmita — I build reliable, low‑latency systems and APIs. Recently on AWS ELB: cut P99 CreateLB latency by ~93% and reduced time‑to‑recovery from ~5 hours to ~4 minutes with asynchronous workflows.</p>
+          <p>Scan or share this page to access my resume and LinkedIn instantly.</p>
+        </div>
+        <div class="panel qr">
+          <img src="qr-page.png" alt="QR code to this page" style="width:240px;height:240px">
+        </div>
+      </div>
+      <footer>© Asmita Hanchate</footer>
+    </div>
+  </div>
+</body>
+</html>
